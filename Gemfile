@@ -15,6 +15,8 @@ gem 'foreman'
 
 gem 'jquery-rails'
 
+gem 'react_on_rails', '8.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 gem 'sqlite3', '~> 1.3.13'
