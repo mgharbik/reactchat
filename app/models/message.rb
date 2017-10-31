@@ -5,4 +5,6 @@ class Message < ApplicationRecord
   validates :chatroom, presence: true
   validates :user, presence: true
   validates :body, presence: true
+
+  after_commit { NewMessageJob.perform_later(self, chatroom) }
 end
